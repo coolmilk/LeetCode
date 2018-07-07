@@ -6,7 +6,7 @@ Given a string, find the length of the longest substring without repeating chara
 //check repeat character in substring
 int validation (char *s, char *e)
 {
-  char map[]={0};
+  char map[128]={0};
   int i, len=e-s+1;
   for(i=0;i<len;i++)
   {
